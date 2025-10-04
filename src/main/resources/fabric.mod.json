@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "my-mod",
+	"id": "my_mod",
 	"version": "${version}",
 	"name": "my mod",
 	"description": "Best mod ever!",
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/my-mod/icon.png",
+	"icon": "assets/my_mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -23,7 +23,7 @@
 		],
 
 		"client": [
-			"com.abel.mymod.m yModClient"
+			"com.abel.mymod.MyModClient"
 		]
 	},
 	"mixins": [
