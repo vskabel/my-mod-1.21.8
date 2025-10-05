@@ -1,4 +1,6 @@
 {
     "item.my_mod.pink_garnet": "Rózsaszín gránát",
-    "item.my_mod.raw_pink_garnet": "Nyers rózsaszín gránát"
+    "item.my_mod.raw_pink_garnet": "Nyers rózsaszín gránát",
+    "block.my_mod.pink_garnet_block": "Rózsaszín gránát blokk",
+    "block.my_mod.raw_pink_garnet_block": "Nyers rózsaszín gránát blokk"
 }
