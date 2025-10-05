@@ -51,8 +51,10 @@ public class ModBlocks {
     }
     // Register blocks and add to creative tab
     public static void registerModBlocks() {
+        // Trigger static initialization of blocks
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(PINK_GARNET_BLOCK);
+            entries.add(RAW_PINK_GARNET_BLOCK);
         });
     }
 }
