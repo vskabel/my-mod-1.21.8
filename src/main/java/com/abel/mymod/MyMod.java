@@ -4,7 +4,9 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import com.abel.mymod.block.ModBlocks;
+import com.abel.mymod.item.ModItemGroups;
 import com.abel.mymod.item.ModItems;
 
 public class MyMod implements ModInitializer {
@@ -15,5 +17,6 @@ public class MyMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
 	}
 }
