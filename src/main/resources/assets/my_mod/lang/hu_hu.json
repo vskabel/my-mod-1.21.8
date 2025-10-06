@@ -3,5 +3,9 @@
     "item.my_mod.raw_pink_garnet": "Nyers rózsaszín gránát",
     "block.my_mod.pink_garnet_block": "Rózsaszín gránát blokk",
     "block.my_mod.raw_pink_garnet_block": "Nyers rózsaszín gránát blokk",
-    "itemgroup.my_mod.pink_garnet_items": "Rózsaszín gránát tárgyak"
+    "itemgroups.my_mod.pink_garnet_itemgroup": "Rózsaszín gránát tárgyak",
+    "block.my_mod.pink_garnet_ore": "Rózsaszín gránát érc",
+    "block.my_mod.deepslate_pink_garnet_ore": "Mélypala rózsaszín gránát érc",
+    "item.my_mod.chisel":"Véső",
+    "block.my_mod.magic_block":"Varázsblokk"
 }

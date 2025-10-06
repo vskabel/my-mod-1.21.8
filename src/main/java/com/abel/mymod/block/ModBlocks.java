@@ -1,6 +1,7 @@
 package com.abel.mymod.block;
 
 import com.abel.mymod.MyMod;
+import com.abel.mymod.block.custom.MagicBlock;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
@@ -20,9 +21,40 @@ import java.util.function.Function;
 public class ModBlocks {
     // Blocks
     public static final Block PINK_GARNET_BLOCK = register("pink_garnet_block",
-            Block::new, Block.Settings.create().strength(4.0f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK));
+            Block::new, Block.Settings.create()
+            .strength(4.0f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+            );
+
+
     public static final Block RAW_PINK_GARNET_BLOCK = register("raw_pink_garnet_block", Block::new,
-            Block.Settings.create().strength(4.0f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK));
+            Block.Settings.create()
+            .strength(4.0f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+            );
+
+
+    public static final Block PINK_GARNET_ORE = register("pink_garnet_ore", Block::new,
+            Block.Settings.create()
+            .strength(4.0f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.STONE)
+            );
+
+
+    public static final Block DEEPSLATE_PINK_GARNET_ORE = register("deepslate_pink_garnet_ore", Block::new,
+            Block.Settings.create()
+            .strength(4.0f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.DEEPSLATE)
+            );
+    public static final Block MAGIC_BLOCK = register("magic_block", MagicBlock::new,
+            Block.Settings.create()
+            .strength(1f)
+            .requiresTool()
+            );
 
 
     // Helper method to register blocks and their corresponding block items
@@ -55,6 +87,11 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(PINK_GARNET_BLOCK);
             entries.add(RAW_PINK_GARNET_BLOCK);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(PINK_GARNET_ORE);
+            entries.add(DEEPSLATE_PINK_GARNET_ORE);
         });
     }
 }

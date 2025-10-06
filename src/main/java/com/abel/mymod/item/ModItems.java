@@ -1,6 +1,7 @@
 package com.abel.mymod.item;
 
 import com.abel.mymod.MyMod;
+import com.abel.mymod.item.custom.ChiselItem;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -15,11 +16,17 @@ public class ModItems {
     // Items
     public static final Item PINK_GARNET = registerItem("pink_garnet");
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet");
+    public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(32).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MyMod.MOD_ID, "chisel")))));
 
     // Helper method to register items
     private static Item registerItem(String name) {
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MyMod.MOD_ID, name));
-        return Registry.register(Registries.ITEM, key, new Item(new Item.Settings().registryKey(key)));
+        return registerItem(name, new Item(new Item.Settings().registryKey(key)));
+    }
+
+    private static Item registerItem(String name, Item item) {
+        RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MyMod.MOD_ID, name));
+        return Registry.register(Registries.ITEM, key, item);
     }
 
     // Register items and add to creative tab
