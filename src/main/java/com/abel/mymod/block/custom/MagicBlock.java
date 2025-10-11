@@ -1,8 +1,6 @@
 package com.abel.mymod.block.custom;
 
-import javax.swing.ToolTipManager;
-
-import com.abel.mymod.item.ModItems;
+import com.abel.mymod.util.ModTags;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -30,11 +28,14 @@ public class MagicBlock extends Block {
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if (entity instanceof ItemEntity itemEntity) {
-            if (itemEntity.getStack().getItem() == ModItems.RAW_PINK_GARNET) {
+            if (isValidItem(itemEntity.getStack())) {
                 itemEntity.setStack(new ItemStack(Items.DIAMOND, itemEntity.getStack().getCount()));
             }
         }
         super.onSteppedOn(world, pos, state, entity);
+    }
+    private boolean isValidItem(ItemStack stack) {
+        return stack.isIn(ModTags.Items.MAGICALY_TRANSFORMABLE_ITEMS);
     }
     
 }
