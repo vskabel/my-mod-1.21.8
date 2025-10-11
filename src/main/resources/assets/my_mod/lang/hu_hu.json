@@ -3,9 +3,18 @@
     "item.my_mod.raw_pink_garnet": "Nyers rózsaszín gránát",
     "block.my_mod.pink_garnet_block": "Rózsaszín gránát blokk",
     "block.my_mod.raw_pink_garnet_block": "Nyers rózsaszín gránát blokk",
-    "itemgroups.my_mod.pink_garnet_itemgroup": "Rózsaszín gránát tárgyak",
+    "itemgroup.my_mod.pink_garnet_itemgroup": "Rózsaszín gránát tárgyak",
     "block.my_mod.pink_garnet_ore": "Rózsaszín gránát érc",
     "block.my_mod.deepslate_pink_garnet_ore": "Mélypala rózsaszín gránát érc",
     "item.my_mod.chisel":"Véső",
-    "block.my_mod.magic_block":"Varázsblokk"
+    "block.my_mod.magic_block":"Varázsblokk",
+    "item.my_mod.cauliflower":"Karfiol",
+    "item.my_mod.star_power":"Csillag Erő",
+
+    "tooltip.my_mod.magic_block.line1": "§3Ez csak egy §r§6§oVARÁZSLATOS§r§r§3§o blokk…§r§r",
+    "tooltip.my_mod.chisel": "Egy télasztikus eszköz minden faragási igényedhez!",
+    "tooltip.my_mod.chisel_shift": "A vésőt senki sem állíthatja meg!",
+    "tooltip.my_mod.cauliflower": "Vajon milyen íze lehet?",
+    "tooltip.my_mod.star_power": "Vigyázz nehogy megégesd magad!",
+    "tooltip.my_mod.star_power_shift": "Mario!"
 }

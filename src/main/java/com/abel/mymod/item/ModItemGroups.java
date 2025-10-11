@@ -21,7 +21,7 @@ public class ModItemGroups {
 
     public static final ItemGroup PINK_GARNET_ITEMGROUP = Registry.register(Registries.ITEM_GROUP,
             PINK_GARNET_ITEMGROUP_KEY,
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.pink_garnet_items"))
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.my_mod.pink_garnet_itemgroup"))
                     .icon(() -> new ItemStack(ModItems.PINK_GARNET)).entries((displayContext, entries) -> {
                         entries.add(ModItems.PINK_GARNET);
                         entries.add(ModItems.RAW_PINK_GARNET);

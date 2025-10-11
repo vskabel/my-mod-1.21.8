@@ -18,6 +18,14 @@ public class ModItems {
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet");
     public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(32).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MyMod.MOD_ID, "chisel")))));
 
+    // Food Items
+    public static final Item CAULIFLOWER = registerItem("cauliflower",
+            new Item(ModFoodComponents.createFoodItemSettings("cauliflower", ModFoodComponents.CAULIFLOWER)));
+        
+    //Fuel items
+    public static final  Item STAR_POWER = registerItem("star_power");
+    
+
     // Helper method to register items
     private static Item registerItem(String name) {
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MyMod.MOD_ID, name));
@@ -34,6 +42,13 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(PINK_GARNET);
             entries.add(RAW_PINK_GARNET);
+            entries.add(CHISEL);
+            entries.add(STAR_POWER);   
+            entries.add(CAULIFLOWER);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+            entries.add(CAULIFLOWER);
         });
     }
 }

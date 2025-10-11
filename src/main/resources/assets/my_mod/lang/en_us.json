@@ -7,5 +7,14 @@
     "block.my_mod.pink_garnet_ore": "Pink Garnet Ore",
     "block.my_mod.deepslate_pink_garnet_ore": "Deepslate Pink Garnet Ore",
     "item.my_mod.chisel": "Chisel",
-    "block.my_mod.magic_block": "Magic block"
+    "block.my_mod.magic_block": "Magic block",
+    "item.my_mod.cauliflower": "Cauliflower",
+    "item.my_mod.star_power": "Star Power",
+
+    "tooltip.my_mod.magic_block.line1": "§3It's just a §r§6§oMAGICAL§r§r§3§o block…§r§r",
+    "tooltip.my_mod.chisel": "A bricktastic tool for all your carving needs!",
+    "tooltip.my_mod.chisel_shift": "Chiselin' like a pro!",
+    "tooltip.my_mod.cauliflower": "A healthy vegetable, good for you!",
+    "tooltip.my_mod.star_power": "Gives you star power when used as fuel!",
+    "tooltip.my_mod.star_power_shift": "It's-a me, Mario!" 
 }

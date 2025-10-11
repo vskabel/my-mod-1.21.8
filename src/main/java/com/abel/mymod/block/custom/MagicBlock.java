@@ -1,5 +1,7 @@
 package com.abel.mymod.block.custom;
 
+import javax.swing.ToolTipManager;
+
 import com.abel.mymod.item.ModItems;
 
 import net.minecraft.block.Block;
@@ -34,4 +36,5 @@ public class MagicBlock extends Block {
         }
         super.onSteppedOn(world, pos, state, entity);
     }
+    
 }
